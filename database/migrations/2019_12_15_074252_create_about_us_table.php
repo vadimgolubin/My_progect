@@ -15,6 +15,8 @@ class CreateAboutUsTable extends Migration
     {
         Schema::create('about_us', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title');
+            $table->string('description');
             $table->timestamps();
         });
     }
