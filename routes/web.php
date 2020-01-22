@@ -12,11 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-
-Auth::routes();
-
-Route::get('/', 'HomeController@index')->name('home.index');
-//Route::get('/news', 'NewsController@index')->name('news.index');
-Route::resource('news', 'NewsController');
